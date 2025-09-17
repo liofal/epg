@@ -5,6 +5,7 @@ on:
     - cron: '0 0 * * *'
 jobs:
   main:
+    if: github.repository_owner != 'liofal'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
